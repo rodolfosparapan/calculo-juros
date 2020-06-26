@@ -2,7 +2,7 @@
 {
     public class TaxaJurosResponse
     {
-        public double TaxaJuros { get; set; }
-        public string TaxaJurosDescricao { get; set; }
+        public double Valor { get; set; }
+        public string Descricao { get; set; }
     }
 }

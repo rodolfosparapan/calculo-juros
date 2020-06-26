@@ -1,9 +1,11 @@
 ﻿using CalculoJuros.Domain.Calculo.Dtos;
+using CalculoJuros.Domain.Common.Interfaces;
+using System.Threading.Tasks;
 
 namespace CalculoJuros.Domain.Calculo.Interfaces
 {
-    public interface ICalculoService
+    public interface ICalculoService : IService
     {
-        CalcularJurosResponse CalcularJurosCompostos(CalcularJurosRequest calcularJurosRequest);
+        Task<CalcularJurosResponse> CalcularJurosCompostosAsync(CalcularJurosRequest calcularJurosRequest);
     }
 }

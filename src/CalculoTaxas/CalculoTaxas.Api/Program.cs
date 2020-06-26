@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace CalculoJuros.Api
+namespace CalculoTaxas.Api
 {
     public class Program
     {

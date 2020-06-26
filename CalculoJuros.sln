@@ -9,12 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculoTaxas", "CalculoTaxa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Infrastructure", "1 - Infrastructure", "{566E9FB1-54F5-463C-826F-A4F833936721}"
 	ProjectSection(SolutionItems) = preProject
-		src\CalculoJuros\dockerfile.txt = src\CalculoJuros\dockerfile.txt
+		src\CalculoJuros\.dockerfile = src\CalculoJuros\.dockerfile
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Infrastructure", "1 - Infrastructure", "{C62CC172-CEBD-4CBE-B2B1-3D88D58FAF50}"
 	ProjectSection(SolutionItems) = preProject
-		src\CalculoTaxas\dockerfile.txt = src\CalculoTaxas\dockerfile.txt
+		src\CalculoTaxas\.dockerfile = src\CalculoTaxas\.dockerfile
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{FB91D0D4-8469-4E6E-BD9D-672AEB385EB0}"

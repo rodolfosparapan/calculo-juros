@@ -1,11 +1,11 @@
-﻿using CalculoJuros.Domain.Common;
-using CalculoJuros.Domain.Common.Interfaces;
+﻿using CalculoTaxas.Domain.Common;
+using CalculoTaxas.Domain.Common.Interfaces;
 using Flunt.Notifications;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CalculoJuros.Api.Controllers
+namespace CalculoTaxas.Api.Controllers
 {
     public abstract class ApiBase : ControllerBase
     {

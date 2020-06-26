@@ -1,12 +1,12 @@
-using CalculoJuros.Api.Configuration;
-using CalculoJuros.CrossCutting;
+using CalculoTaxas.Api.Configuration;
+using CalculoTaxas.CrossCutting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace CalculoJuros.Api
+namespace CalculoTaxas.Api
 {
     public class Startup
     {
@@ -26,8 +26,6 @@ namespace CalculoJuros.Api
             services.AddCorsSetup();
 
             services.AddControllers();
-
-            services.AddAuthSetup(configuration);
 
             services.AddSwaggerSetup();
         }

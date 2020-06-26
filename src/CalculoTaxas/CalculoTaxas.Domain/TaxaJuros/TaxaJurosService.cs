@@ -9,8 +9,8 @@ namespace CalculoTaxas.Domain.TaxasJuros
         {
             return new TaxaJurosResponse
             {
-                TaxaJuros = 0.01d,
-                TaxaJurosDescricao = "100 %"
+                Valor = 0.01d,
+                Descricao = "100 %"
             };
         }
     }

@@ -2,10 +2,10 @@
 {
     public class CalcularJurosResponse
     {
-        public CalcularJurosResponse(decimal valorFinal, double juros)
+        public CalcularJurosResponse(decimal valorFinal, string taxaJurosDescricao)
         {
             ValorFinal = valorFinal;
-            Mensagem = "Taxa de juros utilizada no calculo: " + juros;
+            Mensagem = "Taxa de juros utilizada no calculo: " + taxaJurosDescricao;
         }
 
         public decimal ValorFinal { get; set; }

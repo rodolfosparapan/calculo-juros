@@ -30,6 +30,8 @@ namespace CalculoJuros.Api
             services.AddAuthSetup(configuration);
 
             services.AddSwaggerSetup();
+
+            services.ConfigRetryPolicy();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

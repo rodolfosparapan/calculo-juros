@@ -1,5 +1,7 @@
-﻿using CalculoJuros.Data.Repositories;
+﻿using CalculoJuros.Data.Api;
+using CalculoJuros.Data.Repositories;
 using CalculoJuros.Data.UoW;
+using CalculoJuros.Domain.Calculo.Interfaces;
 using CalculoJuros.Domain.Common.Interfaces;
 using CalculoJuros.Domain.Usuarios.Interfaces;
 using System;
@@ -14,7 +16,8 @@ namespace CalculoJuros.Data.IoC
             var result = new Dictionary<Type, Type>
             {
                 { typeof(IUnitOfWork), typeof(UnitOfWork) },
-                { typeof(IUsuarioRepository), typeof(UsuarioRepository) }
+                { typeof(IUsuarioRepository), typeof(UsuarioRepository) },
+                { typeof(ITaxaJurosApi), typeof(TaxaJurosApi) },
             };
 
             return result;

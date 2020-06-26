@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CalculoJuros.Api.Controllers
+namespace CalculoTaxas.Api.Controllers
 {
     [Authorize]
     [ApiController]
