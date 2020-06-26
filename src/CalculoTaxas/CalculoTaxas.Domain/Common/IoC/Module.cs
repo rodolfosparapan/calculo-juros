@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CalculoTaxas.Domain.TaxasJuros;
+using CalculoTaxas.Domain.TaxasJuros.interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace CalculoTaxas.Domain.Common.IoC
@@ -9,6 +11,7 @@ namespace CalculoTaxas.Domain.Common.IoC
         {
             var result = new Dictionary<Type, Type>
             {
+                { typeof(ITaxaJurosService), typeof(TaxaJurosService) }
             };
 
             return result;
