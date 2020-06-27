@@ -1,4 +1,4 @@
-using CalculoTaxas.Api.Configuration;
+using CalculoTaxas.Api.Setup;
 using CalculoTaxas.CrossCutting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

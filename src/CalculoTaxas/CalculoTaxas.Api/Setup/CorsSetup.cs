@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CalculoTaxas.Api.Configuration
+namespace CalculoTaxas.Api.Setup
 {
     public static class CorsSetup
     {

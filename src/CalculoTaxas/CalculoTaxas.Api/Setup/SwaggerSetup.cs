@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 
-namespace CalculoTaxas.Api.Configuration
+namespace CalculoTaxas.Api.Setup
 {
     public static class SwaggerSetup
     {

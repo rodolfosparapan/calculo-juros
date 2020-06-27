@@ -17,10 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\CalculoTaxas.Api\CalculoTaxas.Api.csproj" />
     <ProjectReference Include="..\CalculoTaxas.Domain\CalculoTaxas.Domain.csproj" />
   </ItemGroup>
 
