@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CalculoJuros.Domain.Calculo;
+using CalculoJuros.Domain.Calculo.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace CalculoJuros.Domain.Common.IoC
@@ -9,6 +11,7 @@ namespace CalculoJuros.Domain.Common.IoC
         {
             var result = new Dictionary<Type, Type>
             {
+                { typeof(ICalculoService), typeof(CalculoService) }
             };
 
             return result;

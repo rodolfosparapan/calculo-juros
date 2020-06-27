@@ -1,4 +1,4 @@
-﻿namespace CalculoJuros.Api.Configuration
+﻿namespace CalculoJuros.Api.Setup
 {
     public class AuthSettings
     {

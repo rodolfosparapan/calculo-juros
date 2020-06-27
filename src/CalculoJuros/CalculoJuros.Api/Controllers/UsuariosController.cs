@@ -1,4 +1,4 @@
-﻿using CalculoJuros.Api.Configuration;
+﻿using CalculoJuros.Api.Setup;
 using CalculoJuros.Domain.Usuarios.Dto;
 using CalculoJuros.Domain.Usuarios.Interfaces;
 using Microsoft.AspNetCore.Mvc;

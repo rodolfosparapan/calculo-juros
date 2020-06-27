@@ -5,7 +5,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace CalculoJuros.Api.Configuration
+namespace CalculoJuros.Api.Setup
 {
     public static class TokenService
     {

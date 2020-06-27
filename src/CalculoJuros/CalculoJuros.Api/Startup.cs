@@ -1,4 +1,4 @@
-using CalculoJuros.Api.Configuration;
+using CalculoJuros.Api.Setup;
 using CalculoJuros.CrossCutting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,8 +30,8 @@ namespace CalculoJuros.Api
             services.AddAuthSetup(configuration);
 
             services.AddSwaggerSetup();
-
-            services.ConfigRetryPolicy();
+            
+            services.AddHttpClientSetup(configuration);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

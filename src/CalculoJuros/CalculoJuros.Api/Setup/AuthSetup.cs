@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace CalculoJuros.Api.Configuration
+namespace CalculoJuros.Api.Setup
 {
     public static class AuthSetup
     {

@@ -16,8 +16,7 @@ namespace CalculoJuros.Data.IoC
             var result = new Dictionary<Type, Type>
             {
                 { typeof(IUnitOfWork), typeof(UnitOfWork) },
-                { typeof(IUsuarioRepository), typeof(UsuarioRepository) },
-                { typeof(ITaxaJurosApi), typeof(TaxaJurosApi) },
+                { typeof(IUsuarioRepository), typeof(UsuarioRepository) }
             };
 
             return result;
