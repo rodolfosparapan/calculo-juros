@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CalculoJuros.Api\CalculoJuros.Api.csproj" />
     <ProjectReference Include="..\CalculoJuros.Domain\CalculoJuros.Domain.csproj" />
   </ItemGroup>
 

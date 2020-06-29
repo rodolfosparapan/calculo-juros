@@ -14,8 +14,8 @@ namespace CalculoJuros.Domain.Calculo.Dtos
         {
             var contract = new Contract();
 
-            contract.IsLowerOrEqualsThan(0, ValorInicial, nameof(ValorInicial), string.Format(Traducao.Valor_Campo_x0_Deve_Ser_Maior_Que_x1, nameof(ValorInicial), 0));
-            contract.IsLowerOrEqualsThan(0, Tempo, nameof(Tempo), string.Format(Traducao.Valor_Campo_x0_Deve_Ser_Maior_Que_x1, nameof(Tempo), 0));
+            contract.IsGreaterThan(ValorInicial, 0, nameof(ValorInicial), string.Format(Traducao.Valor_Campo_x0_Deve_Ser_Maior_Que_x1, nameof(ValorInicial), 0));
+            contract.IsGreaterThan(Tempo, 0, nameof(Tempo), string.Format(Traducao.Valor_Campo_x0_Deve_Ser_Maior_Que_x1, nameof(Tempo), 0));
 
             AddNotifications(contract);
         }

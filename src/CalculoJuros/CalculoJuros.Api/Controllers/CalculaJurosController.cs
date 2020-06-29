@@ -17,7 +17,7 @@ namespace CalculoJuros.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get(CalcularJurosRequest calcularJurosRequest)
+        public async Task<IActionResult> GetAsync(CalcularJurosRequest calcularJurosRequest)
         {
             return Response(await calculoService.CalcularJurosCompostosAsync(calcularJurosRequest));
         }

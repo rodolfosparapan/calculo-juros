@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CalculoJuros.Domain.Calculo
 {
-    internal class CalculoService : ServiceBase, ICalculoService
+    public class CalculoService : ServiceBase, ICalculoService
     {
         private readonly ITaxaJurosApi taxaJurosApi;
 

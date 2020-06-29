@@ -10,12 +10,12 @@ namespace CalculoJuros.Api.Controllers
     public abstract class ApiBase : ControllerBase
     {
         private List<Notification> notificacoes { get; set; }
-        private readonly IService appService;
+        private readonly IService service;
 
         protected ApiBase(IService service)
         {
             notificacoes = new List<Notification>();
-            this.appService = service;
+            this.service = service;
         }
 
         protected bool ValidarRequest(IRequest request)
@@ -33,7 +33,7 @@ namespace CalculoJuros.Api.Controllers
         {
             IActionResult actionResult;
 
-            if (notificacoes.Any() || appService.Invalido)
+            if (notificacoes.Any() || service.Invalido)
             {
                 actionResult = BadRequest(new
                 {
@@ -56,8 +56,8 @@ namespace CalculoJuros.Api.Controllers
             if (notificacoes != null)
                 erros.AddRange(notificacoes.Select(n => n.Message));
 
-            if (appService.Notificacoes != null)
-                erros.AddRange(appService.Notificacoes.Select(n => n.Message));
+            if (service.Notificacoes != null)
+                erros.AddRange(service.Notificacoes.Select(n => n.Message));
 
             return erros.ToArray();
         }
